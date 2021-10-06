@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 15px;
+    box-sizing: border-box;
+}
+body{
+background-size: cover;    
+background-image: url(../Keiverigahtml/images/meta2.jpg);
+}
+
+
+.Registro{
+    width: 423px;
+    background: rgba(0,0,0,.90);
+    padding: 30px;
+    margin: auto;
+    margin-top: 60px;
+    border-radius: 4px;
+    font-family: sans-serif;
+    color:white;
+    box-shadow:7px 13px 37 #000;
+    z-index: 100%;
+}
+.Registro h4{
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+.control{
+    width: 100%;
+    background: #24303c;
+    padding: 30px;
+    border-radius: 4px;
+    margin-bottom: 32px;
+    border: 1px solid #1f53c5;
+    font-family: 'calibri';
+    font-size: 18px;
+}
+.Registro p{
+    text-align: center;
+    font-size: 20px;
+    margin: 20px;
+    font-family: cursive;
+    margin-top: -30px;
+
+}
+.Registro a{
+    color: white;
+    text-decoration: none;
+    
+}
+.Registro a:hover{
+    color: white;
+    text-decoration: underline;
+
+}
+.Registro .boton{
+    width: 100%;
+    background: #1f53c5;
+    padding: 36px;
+    border: none;
+    color: white;
+    margin: 16px 0;
+    font-size: 16px;
+    margin-top: -230px;
+}
+.Registro .boton:hover{
+    background:red;
+    color:white;
+
+}
+.Registro h4{
+    text-align: center;
+}
+
+.olvide:hover{
+    color: orange;
+
+}
+.otrasredes {
+    color: black;
+    margin: 16px;
+    
+}
+.button{
+    width: 140px; 
+    margin-top: 20pxpx;
+}
+
+.Registro h6{
+    text-align: center;
+    margin-top: 5px;
+    color:red;
+    font-size: 24px;
+    padding-left: 20px;
+}
+.Registro a{
+    text-align: right;
+    margin-top: -40px;
+    padding: 20px;
+}
+.img{
+    padding: 8px;
+    height: 150px;
+    display: inline-flex;
+    padding: 110px;
+    margin-top: -100px;
+}
+.olvide{
+    text-align: right;
+    padding: 25px;
+    font-family: sans-serif;
+    padding: 0px;
+    margin: 0px;
+    margin-top: -87px;
+}
+
+
+.recuerdacontraseña p{
+    text-align: right;
+    font-size: 18px;
+    font-family: sans-serif;
+    margin-top: -150px;
+}
+
+label{
+    display: block;
+    padding-left: 15px;
+    text-indent: -15px;
+}
+input{
+    width: 101px;
+    height: 13px;
+    padding: 0;
+    margin: 0;
+    vertical-align: bottom;
+    position: relative;
+    top: -73px;
+    overflow: hidden;
+}
+.check{
+    top:12px;
+}
+
+.logiar{
+    padding: 15px;
+    margin-top: 50px;
+}
+.olvide p6{
+    margin-top: -100pxpx;
+}
+
+.parese a{
+    text-align: center;
+    font-family: cursive;
+}
