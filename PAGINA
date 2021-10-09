@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>PROYECTOUDEA</title>
+	<link rel="stylesheet" href="../prueba-keiver.html/prueba2.css">
+    <meta name ="descripcion" content ="PAGINA PROYECTO UDEA" >
+    <meta name ="author" content = "keiver, raul, santiago,jonathan, camilo"/>
+    <meta name = "keywords"  content ="MANUFACTURA"> 
+</head>
+<body>
+	<header class="header">
+		<div class="container">
+		<div class="btn-menu">
+			<label for="btn-menu">☰</label>
+		</div>
+			<div class="logo">
+				<h1>MANUFACTURA</h1>
+			</div>
+			<nav class="menu">
+				<a href="#inicio">Inicio</a>
+				<a href="../prueba-keiver.html/registrarme.html" target="_black"> Registrate</a>
+				<a href="../prueba-keiver.html/iniciarsesionprueba.html" target="_black">Inicia Sesion</a>
+				<a href="#">Contactos</a>
+			</nav>
+		</div>
+	</header>
+<!--	--------------->
+<input type="checkbox" id="btn-menu">
+<div class="container-menu">
+	<div class="cont-menu">
+		<nav>
+			<a href="#irquienessomos">Quienes Somos</a>
+			<a href="#irmaquinaria">Maquinaria</a>
+			<a href="#irproductos">Productos</a>
+			<a href="#irclientes">Clientes</a>
+			<a href="#irredes">Nuestras Redes</a>
+			<a href="#ircontactos">Contactos</a>
+		</nav>
+		<label for="btn-menu">✖️</label>
+	</div>
+</div>
+
+<div class="container-portada">
+    <div class="capa-gradient"></div>
+    <div class="container-details">
+        <div class="details">
+         <h1>GRACIAS POR VISITARNOS</h1>
+         <p>Lt consetetur atio mole corporisrror totam eum quas officia, adipisci aliquam?</p>
+         <button>VER DETALLES</button>
+        </div>
+    </div>
+    <section class="body">
+        <div class="div2" id="irquienessomos">
+           <h1 class="id"> QUIENES SOMOS?</h2>
+        <article >
+               <p><strong> ipsum dolor sit amet consectetur, adipisicing elit. Asperiores veniam, nemo corporis quam nesciunt ipsum! Laudantium ullam architecto quibusdam a ea repudiandae officia ad, quo delectus! Ea rem suscipit ex voluptatem. Inventore, maxime fugiat repellat architecto magni ducimus autem labore non velit illum quo magnam repudiandae eius illo atque aliquid quia sunt reiciendis aut ullam ipsa optio. Natus optio ea, quibusdam adipisci eos tempore deserunt perspiciatis minima sed cum qui cupiditate vel quod tenetur delectus voluptate iste fugit repudiandae ipsa.</strong></p> 
+        </div>
+         <div class="div2" id="irmaquinaria">
+           <h1 class="id">MAQUINARIA</h1>
+             <p> <strong> ipsum dolor sit amet consectetur adipisicing elit. Dolore odit debitis aspernatur esse quia inventore, velit animi laborum omnis exercitationem mollitia facilis dolores sequi rem fuga consequatur recusandae soluta asperiores quam earum vel doloribus, ullam quae! At quibusdam nisi quo sint nam nihil porro vero error qui perspiciatis veniam voluptates, cum pariatur aut veritatis quae reprehenderit modi consectetur amet. Tempora at quos doloremque quae similique nobis, atque maxime amet rem quo delectus accusamus adipisci voluptate eum repudiandae nemo necessitatibus rerum consectetur fugit architecto sapiente quia! Odit modi aliquam optio saepe harum facilis cupiditate delectus sint ipsa soluta rerum praesentium, nisi neque totam fuga, laborum eaque reprehenderit nam? Ea iure dolorem ex accusamus, doloribus eaque quod consectetur a eum. Libero doloremque soluta itaque cum incidunt consectetur commodi! Ad accusamus nulla quas deserunt, quae harum natus voluptatibus, blanditiis quam omnis asperiores atque eius laboriosam perferendis voluptas quo corporis. Nisi, repudiandae officia quas, iusto at accusantium totam ipsam magni obcaecati, modi dolores quam officiis recusandae veniam illum voluptatem ut. Ducimus, dignissimos natus! Quod doloribus minus perspiciatis tempore, assumenda et fugiat rem, nam eius iusto voluptate, vero esse repellendus ullam dolore sed est nisi in odit exercitationem facilis adipisci vitae ipsam? Excepturi quam alias et aperiam deleniti pariatur repudiandae sapiente laborum tempore animi voluptate repellat, autem necessitatibus molestiae distinctio velit vero architecto expedita officiis eos earum aliquid blanditiis natus? Dolor commodi natus iusto, illo odit cum labore nemo ullam veritatis suscipit eaque hic vel asperiores. Velit aperiam libero consequatur illo dicta facere nobis dolor nihil. Alias itaque, magni fugit accusamus voluptatibus laudantium dolore accusantium officiis unde provident, recusandae quisquam pariatur commodi est! Quam cumque beatae voluptatem ullam, porro ad odio reiciendis fugit vero, dolorem suscipit, hic laborum facere ex eaque optio nisi assumenda. Aut ducimus dignissimos sit aspernatur sed amet? Sit dolorem quis non.</strong></p>
+        </div>
+        </article>
+          <div class="div2" id="irproductos">
+           <h1 class="id">PRODUCTOS</h1>
+             <p> <strong> ipsum dolor sit amet consectetur adipisicing elit. Dolore odit debitis aspernatur esse quia inventore, velit animi laborum omnis exercitationem mollitia facilis dolores sequi rem fuga consequatur recusandae soluta asperiores quam earum vel doloribus, ullam quae! At quibusdam nisi quo sint nam nihil porro vero error qui perspiciatis veniam voluptates, cum pariatur aut veritatis quae reprehenderit modi consectetur amet. Tempora at quos doloremque quae similique nobis, atque maxime amet rem quo delectus accusamus adipisci voluptate eum repudiandae nemo necessitatibus rerum consectetur fugit architecto sapiente quia! Odit modi aliquam optio saepe harum facilis cupiditate delectus sint ipsa soluta rerum praesentium, nisi neque totam fuga, laborum eaque reprehenderit nam? Ea iure dolorem ex accusamus, doloribus eaque quod consectetur a eum. Libero doloremque soluta itaque cum incidunt consectetur commodi! Ad accusamus nulla quas deserunt, quae harum natus voluptatibus, blanditiis quam omnis asperiores atque eius laboriosam perferendis voluptas quo corporis. Nisi, repudiandae officia quas, iusto at accusantium totam ipsam magni obcaecati, modi dolores quam officiis recusandae veniam illum voluptatem ut. Ducimus, dignissimos natus! Quod doloribus minus perspiciatis tempore, assumenda et fugiat rem, nam eius iusto voluptate, vero esse repellendus ullam dolore sed est nisi in odit exercitationem facilis adipisci vitae ipsam? Excepturi quam alias et aperiam deleniti pariatur repudiandae sapiente laborum tempore animi voluptate repellat, autem necessitatibus molestiae distinctio velit vero architecto expedita officiis eos earum aliquid blanditiis natus? Dolor commodi natus iusto, illo odit cum labore nemo ullam veritatis suscipit eaque hic vel asperiores. Velit aperiam libero consequatur illo dicta facere nobis dolor nihil. Alias itaque, magni fugit accusamus voluptatibus laudantium dolore accusantium officiis unde provident, recusandae quisquam pariatur commodi est! Quam cumque beatae voluptatem ullam, porro ad odio reiciendis fugit vero, dolorem suscipit, hic laborum facere ex eaque optio nisi assumenda. Aut ducimus dignissimos sit aspernatur sed amet? Sit dolorem quis non.</strong></p>
+         </div>
+         <div class="div2" id="irclientes">
+           <h1 class="id">CLIENTES</h1>
+             <p> <strong> ipsum dolor sit amet consectetur adipisicing elit. Dolore odit debitis aspernatur esse quia inventore, velit animi laborum omnis exercitationem mollitia facilis dolores sequi rem fuga consequatur recusandae soluta asperiores quam earum vel doloribus, ullam quae! At quibusdam nisi quo sint nam nihil porro vero error qui perspiciatis veniam voluptates, cum pariatur aut veritatis quae reprehenderit modi consectetur amet. Tempora at quos doloremque quae similique nobis, atque maxime amet rem quo delectus accusamus adipisci voluptate eum repudiandae nemo necessitatibus rerum consectetur fugit architecto sapiente quia! Odit modi aliquam optio saepe harum facilis cupiditate delectus sint ipsa soluta rerum praesentium, nisi neque totam fuga, laborum eaque reprehenderit nam? Ea iure dolorem ex accusamus, doloribus eaque quod consectetur a eum. Libero doloremque soluta itaque cum incidunt consectetur commodi! Ad accusamus nulla quas deserunt, quae harum natus voluptatibus, blanditiis quam omnis asperiores atque eius laboriosam perferendis voluptas quo corporis. Nisi, repudiandae officia quas, iusto at accusantium totam ipsam magni obcaecati, modi dolores quam officiis recusandae veniam illum voluptatem ut. Ducimus, dignissimos natus! Quod doloribus minus perspiciatis tempore, assumenda et fugiat rem, nam eius iusto voluptate, vero esse repellendus ullam dolore sed est nisi in odit exercitationem facilis adipisci vitae ipsam? Excepturi quam alias et aperiam deleniti pariatur repudiandae sapiente laborum tempore animi voluptate repellat, autem necessitatibus molestiae distinctio velit vero architecto expedita officiis eos earum aliquid blanditiis natus? Dolor commodi natus iusto, illo odit cum labore nemo ullam veritatis suscipit eaque hic vel asperiores. Velit aperiam libero consequatur illo dicta facere nobis dolor nihil. Alias itaque, magni fugit accusamus voluptatibus laudantium dolore accusantium officiis unde provident, recusandae quisquam pariatur commodi est! Quam cumque beatae voluptatem ullam, porro ad odio reiciendis fugit vero, dolorem suscipit, hic laborum facere ex eaque optio nisi assumenda. Aut ducimus dignissimos sit aspernatur sed amet? Sit dolorem quis non.</strong></p>
+         </div> 
+       <div class="acabar"> 
+       
+       <div class="div3" id="ircontactos">
+           <h1 class="id" >CONTACTOS </h1>
+             <p> <strong> DUEÑOS:</strong> KEIVER CAMARGO</p>
+             <p> <strong> </strong> RAUL </p>
+             <p> <strong> </strong> JONATHAN</p>
+             <p> <strong> </strong> JUAN CAMILO</p>
+             <p> <strong> </strong> SANTIAGO</p> 
+        <article id="IR" class="CERRAR">
+       </article>
+    </section>
+       </div>   
+</div>
+</body>
+</html>
