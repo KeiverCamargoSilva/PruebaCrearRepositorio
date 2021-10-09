@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Montserrat+Alternates|Poppins&display=swap');
+	*{
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		font-family: 'Montserrat Alternates', sans-serif;
+	}
+	.body{
+		background:white;
+	}
+	
+	/*Estilos para el encabezado*/
+	.header{
+		width: 100%;
+		height: 100px;
+		position: absolute;
+		top: 0;left: 0;
+		background: black;
+	}
+	.container{
+		width: 90%;
+		max-width: 1200px;
+		margin: auto;
+	}
+	.container .btn-menu, .logo{
+		float: left;
+		line-height:100px;
+	}
+	.container .btn-menu label{
+		color: #fff;
+		font-size: 25px;
+		cursor: pointer;
+	}
+	.logo h1{
+		color: #fff;
+		font-weight: 400;
+		font-size: 22px;
+		margin-left: 10px;
+	}
+	.container .menu{
+		float: right;
+		line-height: 100px;
+	}
+	.container .menu a{
+		display: inline-block;
+		padding: 15px;
+		line-height: normal;
+		text-decoration: none;
+		color: #fff;
+		transition: all 0.3s ease;
+		border-bottom: 2px solid transparent;
+		font-size: 15px;
+		margin-right: 5px;
+		
+	}
+	.container .menu a:hover{
+		border-bottom: 2px solid #c7c7c7;
+		padding-bottom: 5px;
+	}
+	/*Fin de Estilos para el encabezado*/
+
+	/*Menù lateral*/
+	#btn-menu{
+		display: none;
+	}
+	.container-menu{
+		position: relative;
+		background: rgba(0,0,0,0.5);
+		width: fit-content;
+		height: 0vh;
+		top: 0;left: 0;
+		transition: all 500ms ease;
+		opacity: 0;
+		visibility: hidden;
+		z-index: 100%;
+	}
+	#btn-menu:checked ~ .container-menu{
+		opacity: 1;
+		visibility: visible;
+	}
+	.cont-menu{
+		width: 100%;
+		max-width: 150px;
+		background: #1c1c1c;
+		height: 76vh;
+		position: relative;
+		transition: all 500ms ease;
+		transform: translateX(-100%);
+		z-index: 100;
+	}
+	#btn-menu:checked ~ .container-menu .cont-menu{
+		transform: translateX(0%);
+	}
+	.cont-menu nav{
+		transform: translateY(15%);
+	}
+	.cont-menu nav a{
+		display: block;
+		text-decoration: none;
+		padding: 20px;
+		color: #c7c7c7;
+		border-left: 5px solid transparent;
+		transition: all 400ms ease;
+	}
+	.cont-menu nav a:hover{
+		border-left: 5px solid #c7c7c7;
+		background: #1f1f1f;
+	}
+	.cont-menu label{
+		position: absolute;
+		right: 5px;
+		top: 10px;
+		color: #fff;
+		cursor: pointer;
+		font-size: 18px;
+	}
+	/*DESPLIEGUE IMAGEN*/
+	.details{
+		display: block;
+		margin-block-start: 10em;
+		margin-block-end: 5em;
+		margin-inline-start: 0px;
+		margin-inline-end: 0px;
+		margin-left: 325px;
+		width: 100%;
+		max-width: 500px;
+		top: 20px;
+		color: white;
+		left: 10;
+		height: 320px;
+	}
+
+    .container-portada{
+		margin-top: -66px;
+		width: 100%;
+		height: 400px;
+		background-image: url(../Keiverigahtml/images/metal.jpg);
+		background-size: 200%;
+		animation: movimiento 16s infinite linear alternate;
+		left: 1000px;
+	}
+	@keyframes movimiento{
+		from{
+			background-position: bottom left;
+		}to{
+			background-position: top right;
+		}
+		}
+	.capa-gradient{
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		background: -webkit-linear-gradient(left,rgba(0, 0, 0, 0.342));
+		opacity: 0.6;
+	}
+	.container-details{
+		width: 1005;
+		max-width: 1200px;
+		position: relative;
+		margin: auto;
+	}
+	
+	.details h1{
+		font-size: 40px;
+		font-weight: 100;
+
+	}
+	.details p{
+		margin-top: 10;
+		font-size: 20px;
+	}
+	.details button{
+		padding: 10px 20px;
+		font-size: 16px;
+		background: none;
+		border-style: none;
+		border: 1px solid white;
+		color: white;
+		margin-top: 20px;
+		transition: background 300ms;
+		cursor: pointer;
+	}
+	.details button:hover{
+		background: white;
+		color: black;
+	}
+	.div2{
+		text-align: center;
+		padding: 100px 0px 0px 0px;
+		text-align: center;
+		padding: 20;
+		margin: 10;
+	}
+	.div2 h1{
+		color:#395BB6;
+	}
+	.div2 p{
+		color:black;
+		text-align: left;
+		margin: 50px;
+		font-size: 20px;
+		font-family: "Roboto", Helvetica, Arial, "Lucida Grande", sans-serif;
+		font: 15px;
+	}
+	.li{
+		text-align: left;
+		list-style: none;
+		right: 15px;
+		top: 15px;
+		color: white;
+		font-size:  28px;
+		text-align: 9px;
+		border: 1px solid black;
+		display: block;
+	}
+	.div3 p{
+		color: white;
+		text-align: left;
+		margin: 50px;
+		font-size: 20px;
+		font-family: "Roboto", Helvetica, Arial, "Lucida Grande", sans-serif;
+		font: 15px;
+	}
+	.div3 h1 , .h6{
+		color:#395BB6;
+		text-align: center;
+
+	}
+	.div3{
+		background: rgba(0,0,0,.90);
+	}
