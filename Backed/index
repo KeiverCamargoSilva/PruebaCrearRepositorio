@@ -1,0 +1,42 @@
+onst express = require('express');
+const { auth } = require('google-auth-library');
+const moongoose= require('./src/databases/conection');
+const app= express();
+const cors = require('cors');
+//const jwt =require ('jsonwebtoken');
+
+app.use(cors());
+app.use(express.json());
+
+/* app.use((req, res, next)=>{
+  const {token} = req.headers;
+  console.log('algo', req.headers);
+  /* jwt.verify(token, 'miClave', function(err,decoded){
+    console.log(decoded.foo) //bar
+  }); 
+  next();
+  */
+
+const authRouter = require('./src/databases/Routers/authRouter');
+
+app.use('/auth', authRouter);
+
+
+app.get('/', (req, res)=>{
+  console.log(req.params)
+  res.json({
+    "Nombre": "asas", "apellido": "asas", "correo": "asas", "password": "asas" , "password2": "asas"
+    });
+});
+
+ app.post('/', (req, res)=>{
+   res.json({message:"hola vas a crear algo nuevo"});
+});
+
+ app.put('/', (req, res)=>{
+  res.json({message:"hola vas a actualizar un resgistro"});
+});
+
+app.listen(5000,()=>{
+  console.log("ya el servidor esta corriendo correctamente");
+});
