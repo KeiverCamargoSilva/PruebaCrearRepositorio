@@ -1,0 +1,16 @@
+T  http://localhost:5000 HTTP/1.1
+###
+
+POST http://localhost:5000
+
+{
+"dni": 102032, "name": "andres ordoñez", "age": 34, "semester": 3
+}
+//DELETE 'mongodb+srv://admin_root:root@misionticproyecto.c7jb8.mongodb.net/myFirstDatabase?retryWrites=true&w=majority'
+
+### 
+PUT http://localhost:5000
+
+{
+"Nombre": "keiver", "apellido": "cardona", "correo": "keivercamargo21@gmail.com", "password": "hola" , "password2": "hola"
+}
