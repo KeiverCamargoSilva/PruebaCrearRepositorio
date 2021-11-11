@@ -1,38 +1,63 @@
-<!DOCTYPE html>
-<html lang="ES">
-    <head>
-        <link rel="stylesheet" href="../prueba-keiver.html/IniciarSesion.css">
-        <title>INICIAR SESION</title>
-    </head>
-    <body >
-        <section class="Registro">
-        <article>
-            <p class="parese"> NO TIENES CUENTA?<a href="../prueba-keiver.html/registrarme.html">REGISTRATE AQUI</a></p>
-        </article>
-            <h4 class="parese"> INICIA SESION EN MANUFACTURA METALES</h4>
-            <form>
-             <div class="logiar">
-            <input  class="control" type="email" name="CORREO ELECTRONICO" id="nombre" placeholder="INGRESE UN CORREO ELECTRONICO">
-            <input class="control" type="password" name="CONTRASEÑA" id="nombre" placeholder="CONTRASEÑA">
-             </div>
-            </form>
-              <div class="recuerdacontraseña">
-                <p>Recuerdame la contraseña</a></p>
-                 <label class="check"><input type="checkbox" name="recuerdacontraseña"></label>
+import React from "react";
+import '../src/componentes/Style/Login.css';
+import {GoogleLogin} from 'react-google-login';
+import '../src/componentes/Style/Outh.css';
+import axios from 'axios'
+import TextAnimacion from "./TextAnimacion";
+
+
+class Login extends React.Component{
+  responseGoogle= (googleResp)=>{
+        console.log(googleResp)
+        axios.post('http://localhost:5000/auth/google', {token: googleResp.tokenId})
+        .then(data=> console.log('todo bien', data))
+        .catch(err=> console.log('hubo un error', err))
+       }
+
+        /* .then(resp=>{
+          //console.log('Todo bien este es el token' , resp.data);
+          //sessionStorage.setItem('token', JSON.stringify(resp.data));
+        })
+        .catch(err=>console.log('hubo un error', err))
+      } */
+
+    render(){
+        return(
+        <body>
+        <form action="/Login" method="POST">
+         <section className="Registro">
+            <h4 className="parese"> INICIA SESION EN MANUFACTURA METALES</h4>
+            <h3 class="animacion"> <br/>  Hola, bienvenido a la gestion de usuarios: <TextAnimacion/>  </h3>
+            <div className="logiar">
+               <input  className="control" type="email" name="CORREO ELECTRONICO" id="nombre" placeholder="INGRESA TU CORREO ELECTRONICO"/>
+               <input className="control" type="password" name="CONTRASEÑA" id="nombre" placeholder="CONTRASEÑA"/>
+            </div>
+              <div className="recuerdacontraseña">
+                 <p>Recuerdame la contraseña</p>
+                 <label className="check"><input type="checkbox" name="recuerdacontraseña"/></label>
               </div>
               <div>
-                <input class="boton" type="submit" value="INICIAR SESION">
+                <input className="boton" type="submit" value="INICIAR SESION"/>
               </div>
-                <div class="olvide">
+                <div className="olvide">
                   <p6><a href="#olvidemicontraseña">Olvidaste tu contraseña?</a></p6>
                 </div>
-                   <h6> OTRAS MANERAS DE INICIAR SESION </h1>
-                
-         <address> 
-            <div class="img">
-              <a href="https://accounts.google.com/"><img src="../Keiverigahtml/images/google2.jpg.png" alt="imagen de goolge" width="70px"></a>
-            </div>
-        </address>
-        </section>
-    </body>
-</html>
+                   <h6> OTRAS MANERAS DE INICIAR SESION </h6>
+                   <GoogleLogin
+                    clientId="176494503829-8jv4b8bus3261sjlatse9qo9p7sbqq0k.apps.googleusercontent.com"
+                     //buttonText="Login"
+                     render={renderProps=>(
+                    <button className="Boton" onClick={renderProps.onClick} disable={renderProps.disabled}>Google </button>
+                    )}
+                   onSuccess={this.responseGoogle}
+                   onFailure={this.responseGoogle}
+                   cookiePolicy={'single_host_origin'}
+                   />
+          </section>
+         </form>
+        </body>
+        );
+    }
+}
+
+export default Login;
