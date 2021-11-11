@@ -1,0 +1,33 @@
+const {OAuth2Client} =require('google-auth-library');
+//const CLIENT_ID='176494503829-8jv4b8bus3261sjlatse9qo9p7sbqq0k.apps.googleusercontent.com';
+//const jwt = require('jsonwebtoken');
+//const JWT_KEY = 'miClave';
+
+const userModel=require('../user');
+
+googleAuth =(req, res) =>{
+    console.log(req.headers, req.body, req.params);
+}
+    //const {token}=req.body;
+/* 
+    const client= new OAuth2Client(CLIENT_ID);
+    client.verifyIdToken({
+        idToken: token,
+        audience: CLIENT_ID
+    }).then(resq => {
+        console.log(resq);
+       // const {name, email}= resq.payload;
+        //console.log(name, email);
+        //return userModel.findOneAndUpdate({email:email}, {name:name}, {new:true, upsert:true}); 
+    }).then(user => {
+        console.log(user);
+        // crear tiken de la aplicaion y retornar
+        var appToken=jwt.sign({user: user}, JWT_KEY);
+        res.json(appToken); 
+    }).catch(err => {
+        console.log(err);
+        res.status(500).send(err);
+    });
+}
+ */
+module.exports={googleAuth};
