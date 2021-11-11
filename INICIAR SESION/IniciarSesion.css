@@ -1,13 +1,11 @@
-*{
+  *{
     margin: 0;
     padding: 15px;
     box-sizing: border-box;
 }
 body{
 background-size: cover;    
-background-image: url(../Keiverigahtml/images/meta2.jpg);
 }
-
 
 .Registro{
     width: 423px;
@@ -152,4 +150,12 @@ input{
 .parese a{
     text-align: center;
     font-family: cursive;
+}
+
+.Registro h3{
+font-size: 18px;
+font-family: Arial, Helvetica, sans-serif;
+color:aqua;
+text-align: center;
+letter-spacing: -1px;
 }
